@@ -1,11 +1,330 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>pervaya probnaya</title>
-</head>
-<body>
+<html lang="ru">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+
+
+
+
+    <!-- Служебное содержимое-->
+    <title> Типы поля input </title>
+    <!--  Название страницы  -->
+    <meta http eguiv="Content-type" content="text/html;charset=UTF-8" />
+    <!--  Кодировка страницы  -->
+    <style type="text/css">
+        TABLE {
+            width: 90;
+            /* Ширина таблицы */
+            background: #fffff0;
+            /* Цвет фона нечетных строк */
+            border: 2px solid #a52a2a;
+            /* Рамка вокруг таблицы */
+            border-collapse: collapse;
+            /* Убираем двойные линии между ячейками */
+        }
+        
+        TD,
+        TH {
+            padding: 3px;
+            /* Поля вокруг содержимого ячейки */
+        }
+        
+        TD {
+            text-align: left;
+            /* Выравнивание в ячейке */
+            border-bottom: 1px solid #a52a2a;
+            /* Линия внизу ячейки */
+        }
+        
+        TH {
+            background: #a52a2a;
+            /* Цвет фона */
+            color: white;
+            /* Цвет текста */
+        }
+        
+        TR.even {
+            background: #fff8dc;
+            /* Цвет фона четных строк */
+        }
+        
+        .la {
+            text-align: left;
+            /* Выравнивание по левому краю */
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="anchar">Zagalovok</h1>
+    <ol>
+        <li>2</li>
+        <li>2</li>
+        <li>3</li>
+    </ol>
+    <ul>
+        <li>Омлет
+            <ul>
+                <dl>
+                    <dt><li>Молоко</li></dt>
+                    <dd>пакет с белой жидкостью</dd>
+                    <dt><li>Яйца</li></dt>
+                    <dd>круглая белая штука</dd>
+                </dl>
+            </ul>
+        </li>
+        <li>Блинчики
+            <ol>
+                <li>Молоко</li>
+                <li>Яйца</li>
+                <li>Мука</li>
+                <li>Сахар</li>
+                <li>Соль</li>
+                <li>Разрыхлитель</li>
+            </ol>
+        </li>
+        <li>Торт</li>
+        <li>Пирог</li>
+    </ul>
+    <table border="1">
+        <caption>Zagalovok</caption>
+        <thead>
+            <tr>
+                <th>nomer</th>
+                <th>Product</th>
+                <th>Counts</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Milk</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Meat</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td colspan="2">toys and teddies</td>
+            </tr>
+            <tr>
+                <td rowspan="2">4</td>
+                <td>yogurts bread milks juces cola</td>
+            </tr>
+            <tr>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>5</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, adipisci vel, explicabo accusantium incidunt odio recusandae architecto tenetur pariatur officia, quae vitae. Quos fuga doloribus, aspernatur laborum possimus aliquid quae. Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Nesciunt, adipisci vel, explicabo accusantium incidunt odio recusandae architecto tenetur pariatur officia, quae vitae. Quos fuga doloribus, aspernatur laborum possimus aliquid quae.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, adipisci vel, explicabo accusantium incidunt odio recusandae architecto tenetur pariatur officia, quae vitae. Quos fuga doloribus, aspernatur laborum possimus aliquid quae. Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Nesciunt, adipisci vel, explicabo accusantium incidunt odio recusandae architecto tenetur pariatur officia, quae vitae. Quos fuga doloribus, aspernatur laborum possimus aliquid quae.
+    </p>
+
+    <form method="GET" name="filter" action="http://example.com/catalog/">
+        <p>Диагональ экрана</p>
+        <label><input type="radio" name="screen" value="4" checked> 4</label><br>
+        <label><input type="radio" name="screen" value="4.5"> 4.5</label><br>
+        <label><input type="radio" name="screen" value="5"> 5</label>
+        <p>Цвет</p>
+        <label><input type="checkbox" name="color_black" checked> Черный</label><br>
+        <label><input type="checkbox" name="color_white" checked> Белый</label><br>
+        <label><input type="checkbox" name="color_golden"> Золотой</label><br>
+        <input type="submit" value="Применить фильтр">
+    </form>
+
+
+
+    <form action="">
+        <fieldset>
+            <legend>
+                Коротко о себе:
+            </legend>
+            <input type="radio" name="Sex" value="Мужской" checked="checked" />
+            <small>Молодой человек</small><br />
+            <input type="radio" name="Sex" value="Женский" /> <small>Девушка</small><br />
+            <input type="text" size="20" /> <small>Дата рождения</small><br />
+            <input type="text" size="20" /> <small>Семейное положение</small><br />
+            <input type="text" size="20" /> <small>Социальный статус</small><br />
+            <input type="text" size="20" /> <small>Местожительство</small><br />
+            <input type="submit" value="Отправить" />
+        </fieldset>
+    </form>
+
+
+
+
+
+
+
+
+
+    <!--  Отображаемое тело страницы -->
+    <h1 style="text-align: center;"> Поля ввода текста в HTML5 </h1>
+
+    <table border="1">
+        <section style="text-align: center; text-decoration: solid;font-size: xx-large;">Polya vvoda teksta v html5</section>
+        <tr>
+            <th width="200">Написание тегов указанно без
+                <>
+            </th>
+            <th>Значение</th>
+        </tr>
+        <tr>
+            <td> input type="checkbox"</td>
+            <td>Флажок.</td>
+        </tr>
+        <tr>
+            <td>input type="color"</td>
+            <td>Виджет для выбора цвета</td>
+        </tr>
+        <tr>
+            <td>input type="date"</td>
+            <td>Поле для ввода календарной даты (год, месяц, день).</td>
+        </tr>
+        <tr>
+            <td>input type="datetime"</td>
+            <td>Поле для ввода даты и времени.</td>
+        </tr>
+        <tr>
+            <td>input type="datetime-local"</td>
+            <td>Поле для ввода даты и местного времени.</td>
+        </tr>
+        <tr>
+            <td>input type="email"</td>
+            <td>Поле для ввода адреса электронной почты.</td>
+        </tr>
+        <tr>
+            <td>input type="file"</td>
+            <td>Поле для ввода имени файла, который пересылается на сервер.</td>
+        </tr>
+        <tr>
+            <td>input type="hidden"</td>
+            <td>Скрытое поле (не отображается на Web-странице).</td>
+        </tr>
+        <tr>
+            <td>input type="image"</td>
+            <td>Графическая кнопка отправки данных формы на сервер. Вместе с этим значением нужно использовать атрибут src, чтобы определить адрес изображения и атрибут alt для определения альтернативного текста. Можно также задать атрибуты width и height,
+                чтобы определить размер изображения в пикселях.</td>
+        </tr>
+        <tr>
+            <td>input type="month"</td>
+            <td>Поле для ввода месяца и года.</td>
+        </tr>
+        <tr>
+            <td>input type="number"</td>
+            <td>Поле для ввода чисел.</td>
+        </tr>
+        <tr>
+            <td>input type="password"</td>
+            <td>Поле для ввода пароля.</td>
+        </tr>
+        <tr>
+            <td>input type="radio"</td>
+            <td>Переключатели (радио-кнопки). Выбрать можно только один вариант. Атрибут checked указывает, что вариант выбран по умолчанию.</td>
+        </tr>
+        <tr>
+            <td>input type="range</td>
+            <td>Ползунок для ввода чисел в указанном диапазоне. Если соответствующие атрибуты не указаны, то значения по умолчанию:</td>
+        </tr>
+        <tr>
+            <td>input type="search"</td>
+            <td>Поле для ввода строки поиска.</td>
+        </tr>
+        <tr>
+            <td>input type="tel"</td>
+            <td>Поле для ввода номера телефона.</td>
+        </tr>
+        <tr>
+            <td>input type="text"</td>
+            <td>Текстовое поле.</td>
+        </tr>
+        <tr>
+            <td>input type="time"</td>
+            <td>Поле для ввода времени.</td>
+        </tr>
+        <tr>
+            <td>input type="url"</td>
+            <td>Поле для ввода Web-адреса.</td>
+        </tr>
+        <tr>
+            <td>input type="week"</td>
+            <td>Поле для ввода номера недели и года.</td>
+        </tr>
+    </table>
+    <table>
+        <caption></caption>
+        <thead>
+            <tr>
+                <th>
+                    <form action=""><input type="text" class="submit"></form>
+                </th>
+                <td></td>
+            </tr>
+        </thead>
+        <tbody>
+            <form action="">
+                <tr>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+            </form>
+        </tbody>
+    </table>
+
+    <p>
+        Большинство из этих полей ввода, как правило, отображается в виде однострочного текстового поля. Однако поддерживающие их браузеры могут выполнять некоторые интересные действия с дополнительной семантической информацией. Например, браузер Safari в операционной
+        системе iOS использует тип поля ввода, чтобы отобразить клавиатуру, подходящую для целей ввода, например, кнопку Найти (Search) для поля ввода <b>search</b> или клавишу .com, когда устанавливается поле ввода <b>url</b>.
+    </p>
+    <p>
+        Браузер, поддерживающий эти поля, может проверить введенные пользователем данные, чтобы убедиться, что они верны, например, что в тексте, введенном в поле <b>email</b>, соблюдена стандартная структура адреса электронной почты (раньше для проверки
+        требовался сценарий JavaScript). Например, браузер Firefox отображает предупреждение, если введенные данные не соответствуют ожидаемому формату.
+    </p>
+    <p>
+        Не все браузеры поддерживают новые поля ввода спецификации HTML5 или поддерживают их одинаково, но хорошей новостью является то, что, если поле ввода не распознано браузером, по умолчанию вместо него отображается универсальное поле ввода текста, которое
+        прекрасно работает. Нет никаких причин, чтобы не начать их использовать.
+    </p>
 </body>
+
 </html>
