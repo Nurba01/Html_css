@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1>Forms</h1>
+    <h2>simple Forms</h2>
+
+    <form action="" method="get">
+        <p>
+            <label for="">Username: 
+                <input id="name" type="text" placeholder="write your name">
+            </label>
+        </p>
+        <p><label for="">Text comment:</label><br>
+            <textarea placeholder="text comment" name="comment" id="comment" cols="10" rows="2"></textarea>
+        </p>
+        <input type="submit" value="Send">
+        <button>add comments</button>
+    </form>
+    <form action="">
+        <p>
+            <label for="">Username:</label>
+            <input required type="text" id="userName" placeholder="Write your name">
+        </p>
+        <p>
+            <label for="">Email</label>
+            <input type="email" id="userEmail" placeholder="Write your Email">
+        </p>
+        <input type="submit" value="Send">
+
+        <p>
+            <label for="date">Date</label><br>
+            <input type="date">
+        </p>
+        <p>
+            <label for="">password:</label>
+            <input type="password" id="password">
+        </p>
+        <p>
+            <input type="checkbox" id="breakfast">
+            <label for="breakfast">Breakfast</label><br>
+            <input type="checkbox" id="dinner">
+            <label for="dinner">Dinner</label><br>
+            <input type="checkbox" id="lunch">
+            <label for="lunch">lunch</label><br>
+        </p>
+
+        <h3>Choose your drink</h3>
+        <input type="radio" id="coffee" name="drink">
+        <label for="coffee">coffee</label><br>
+
+        <input type="radio" id="tea" name="drink">
+        <label for="tea">tea</label><br>
+
+        <input type="radio" id="capuccino" name="drink">
+        <label for="capuccino">Capuccino</label>
+
+
+        <h3>Choose your town</h3>
+        <select name="towns" id="select-city">
+            <option value="moscow">Moscow</option>
+            <option value="kiev">Kiev</option>
+            <option value="minsk">Minsk</option>
+            <option value="tokio">Tokio</option>
+        </select>
+
+
+        <label for="file">Choose your file</label>
+        <input type="file" id="file"><br>
+        <input type="reset" value="Reset">
+    </form>
+</body>
+
+</html>

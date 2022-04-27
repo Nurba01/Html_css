@@ -12,26 +12,34 @@
     <h1>Tables Tables</h1>
     <h2>Simple tables</h2>
     <table border="1" width="500">
-        <tr style="background-color:brown">
-            <td>1</td>
-            <td>sold on monday</td>
-            <td>sold on tuesday</td>
-        </tr>
-        <tr>
-            <td colspan="2"> apples</td>
-            <!-- <td>5kg</td> -->
-            <td>6kg</td>
-        </tr>
-        <tr>
-            <td>banana</td>
-            <td>10kg</td>
-            <td rowspan="2"> 6kg</td>
-        </tr>
-        <tr>
-            <td>oranges and fruits</td>
-            <td>5kgdfdf</td>
-            <!-- <td>6kg</td> -->
-        </tr>
+        <thead>
+            <tr style="background-color:brown">
+                <td>1</td>
+                <td>sold on monday</td>
+                <td>sold on tuesday</td>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td>oranges and fruits</td>
+                <td>5kgdfdf</td>
+                <!-- <td>6kg</td> -->
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td colspan="2"> apples</td>
+                <!-- <td>5kg</td> -->
+                <td>6kg</td>
+            </tr>
+            <tr>
+                <td>banana</td>
+                <td>10kg</td>
+                <td rowspan="2"> 6kg</td>
+            </tr>
+        </tbody>
+
+
     </table>
 </body>
 
